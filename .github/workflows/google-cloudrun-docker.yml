@@ -52,8 +52,8 @@ on:
 env:
   PROJECT_ID: crested-guru-339621 # Google Cloud project id
   GAR_LOCATION: gcr.io/crested-guru-339621 # TODO: update Artifact Registry location
-  SERVICE: web_server2 # TODO: update Cloud Run service name
-  REGION: us-central1 # TODO: update Cloud Run service region
+  SERVICE: web_server2 # Cloud Run service name
+  REGION: us-central1 # Cloud Run service region
 
 jobs:
   deploy:
@@ -71,16 +71,7 @@ jobs:
         id: auth
         uses: 'google-github-actions/auth@v0'
         with:
-          token_format: 'access_token'
-          workload_identity_provider: '${{ secrets.WIF_PROVIDER }}' # e.g. - projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider
-          service_account: '${{ secrets.WIF_SERVICE_ACCOUNT }}' # e.g. - my-service-account@my-project.iam.gserviceaccount.com
-
-      # NOTE: Alternative option - authentication via credentials json
-      # - name: Google Auth
-      #   id: auth
-      #   uses: 'google-github-actions/auth@v0'
-      #   with:
-      #     credentials_json: '${{ secrets.GCP_CREDENTIALS }}''
+          credentials_json: '${{ secrets.GCP_AUTH }}''
 
       # BEGIN - Docker auth and build (NOTE: If you already have a container image, these Docker steps can be omitted)
 
@@ -89,9 +80,7 @@ jobs:
         id: gcr-auth
         uses: 'docker/login-action@v1'
         with:
-          username: 'oauth2accesstoken'
-          password: '${{ steps.auth.outputs.access_token }}'
-          registry: '${{ env.GAR_LOCATION }}'
+          credentials_json: '${{ secrets.GCR_AUTH }}'
 
       - name: Build and Push Container
         run: |-
