@@ -80,8 +80,8 @@ jobs:
         id: gcr-auth
         uses: 'docker/login-action@v1'
         with:
-          username: 'oauth2accesstoken'
-          password: '${{ steps.auth.outputs.access_token }}'
+          username: _json_key_base64
+          password: ${{ secrets.GCR_AUTH }}
           registry: '${{ env.GAR_LOCATION }}'
 
       - name: Build and Push Container
