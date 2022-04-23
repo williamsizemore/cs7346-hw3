@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Budget Calculator</title>
+<script type="text/javascript">
+// calculator code here
+	var rowcache = 'row7';
+	function calculate() {
+		document.getElementById('highendPC').src = "img/high-endpc.png";
+		document.getElementById('budgetPC').src = "img/budgetpc.png";
+
+		document.getElementById(rowcache).style.display = "none";
+		var dollars= parseFloat(document.getElementById("budget").value);
+		if (isNaN(dollars))
+			element.innerHTML = "Please enter a valid number";
+		
+		//temporary values - needs replacement
+		//possibly implement pcpartpicker results
+		// or pull from data file to display results
+		var element = document.getElementById("result");
+		//need to reset after clicked again
+		if (dollars == 0) {
+			document.getElementById('row7').style.display = "block";
+			rowcache = 'row7';  }
+		else if (dollars >= 1200) {  									// extreme end gaming and rendering
+			document.getElementById("row6").style.display = "block";
+			rowcache = 'row6';
+			document.getElementById('highendPC').src = "img/high-endpchighlight2.png";
+		}	
+		else if (dollars >= 900) {										// high end gaming
+			document.getElementById("row5").style.display = "block";
+			rowcache = 'row5';
+			document.getElementById('highendPC').src = "img/high-endpchighlight2.png";
+		}	
+		else if (dollars >=700) {
+			document.getElementById("row4").style.display = "block";	// mid-level gaming
+			rowcache = 'row4'; 
+			document.getElementById('highendPC').src = "img/high-endpchighlight2.png";
+		}
+		else if (dollars >= 450) {
+			document.getElementById("row3").style.display = "block";	// entry level gaming
+			rowcache = 'row3'; 
+			document.getElementById('budgetPC').src = "img/budgetpchighlight.png";
+		}
+		else if (dollars >= 250) {
+			document.getElementById("row2").style.display = "block";	// basic needs
+			rowcache = 'row2';
+			document.getElementById('budgetPC').src = "img/budgetpchighlight.png";
+		}
+		else {	
+			document.getElementById("row1").style.display = "block";	//low budget message
+			rowcache = 'row1';
+			document.getElementById('budgetPC').src = "img/budgetpchighlight.png"; 
+		}
+	}
+	
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<style type="text/css">
+.auto-style3 {
+	margin-top: 0px;
+	margin-bottom: 11px;
+}
+</style>
+
+</head>
+
+<body>
+<div id="container">
+	<div id="menu" class="menu">
+		<a href="index.html">Home</a>
+		<a href="how-to-build-a-pc.html">How to Build a PC</a>
+		<a href="budget-calculator.html">Budget Calculator</a>
+		<a href="faqs.html">FAQ</a>
+		<a href="tips.html">Tips</a>
+		<a href="contact-me.html">Contact Us</a>
+	</div>
+	<div id="left">			
+		<img src="img/budgetpc.png" height="330" id="budgetPC"width="483" alt="dellpc" class="auto-style3" >
+		
+		<img src="img/high-endpc.png" alt="gamingpc" id="highendPC" >
+
+		<div id="calculator">
+			
+			<h3>Estimate the general level of performance you can expect from 
+			your budget:</h3>
+			<label>Budget for a PC  $</label>
+			<input id="budget" type="text" placeholder="500.00">
+			<input type="submit" value="Calculate" onclick="calculate()" id="submit">
+			<p id="note">*Result is a very generalized assumption to provide an idea of what to expect when in the market for a PC. </p>
+	<table id="budgetTable" style="width: 991px; height: 372px" >
+				
+	<thead>
+	</thead>
+	<tbody>
+		
+			<tr id="row1" style="display:none;" class="row">	
+			<td  style="width: 1079px"><h2>Low Budget </h2>
+			<h2>&lt;$249</h2></td>
+			<td  style="width: 6963px"><p>You'll be hard pressed to find a computer 
+			that runs a modern version of windows and would serve much use at this price range. 
+			There are other options like Chromebooks, which are great if you only need 
+			to use a browser and some plugins. There are some possibilities for very basic use computer if using a Linux distribution, such as Ubuntu, is an option for the user. 
+			<br><br>For less than $250, there really aren't that many options unless some parts are being taken from other computers already owned.</p></td>
+			</tr>
+			<tr id="row2" style="display:none;"class="row">
+			<td  style="width: 1079px"><h2>Basic Needs </h2>
+			<h2>$250-$449</h2></td>
+			<td  style="width: 6963px"><p>At this price range, you can get a 
+			computer that will handle browsing the internet and editing 
+			documents without issue. There may be occasional slow-downs when 
+			running a few windows of browser tabs and documents, but keeping the 
+			multitasking to a minimum will resolve the issue.</p></td>
+		</tr>
+		<tr id="row3" style="display:none;"class="row">
+			<td  style="width: 1079px"><h2>Entry Level </h2>
+			<h2>$450-$699</h2></td>
+			<td  style="width: 6963px"><p>
+			At this price range, you can get a computer that will be much more 
+			capable of running multiple windows/programs at the same time. The 
+			budget would get a computer that is capable of maxing out 
+			simple/older games and be able to play some of the more intensive 
+			AAA titles at low or medium settings.</p></td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr id="row4" style="display:none;"class="row">
+			<td  style="width: 1079px"><h2>Mid-tier </h2>
+			<h2>$700-$899</h2></td>
+			<td  style="width: 6963px"><p>
+			This budget allows for a mid-range gaming PC that will be able to 
+			run a couple of monitors easily and handle multitasking of browser 
+			tabs and documents like it's nothing. Given a better Dedicated GPU, 
+			a PC in this range can play newer AAA titles at medium-high 
+			settings.</p>
+			</td>
+		</tr>
+	
+		<tr id="row5" style="display:none;"class="row">
+			<td  style="width: 1079px"><h2>High end </h2>
+			<h2>$900-$1199</h2></td>
+			<td  style="width: 6963px"><p>This budget allows for a high-end gaming 
+			PC that can handle any of the newest titles at high-ultra settings 
+			at 1080p or 1440p easily. Rendering 1080p videos in editing software 
+			from the likes of Adobe will have no issue scrubbing through 
+			footage.</p></td>
+		</tr>
+	
+		<tr id="row6" style="display:none;"class="row">
+			<td  style="height: 23px; width: 1079px;"><h2>Extreme end </h2>
+			<h2>$1200+</h2></td>
+			<td  style="height: 23px; width: 6963px;"><p>This budget is for 
+			enthusiasts who want the absolute most out of their PC. Whether its 
+			playing games at 4k resolution or rendering 4k footage in Adobe, the 
+			user will no doubt have a good time and can expect the PC to last 
+			them a while.&nbsp;&nbsp; </p></td>
+		</tr>
+	
+		<tr id="row7" style="display:none;"class="row">
+			<td  style="height: 23px; width: 1079px;">&nbsp;</td>
+			<td  style="height: 23px; width: 6963px;">You need to enter a valid 
+			budget number</td>
+		</tr>
+	
+	</tfoot>
+	</table>
+		</div>
+	
+	</div>
+
+
+
+
+</div>
+</body>
+
+</html>

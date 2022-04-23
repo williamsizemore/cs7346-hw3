@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Tips for Building A PC</title>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script type="text/javascript">
+	
+	var tips = new Array(3);
+	//define each array element as an image
+	for (var i=0; i<tips.length; i++)
+		tips[i] = new Image();
+		
+	//give the path to the src properties of the array elements
+	tips[0].src = "img/tip1.jpg";
+	tips[0].alt = "Don't put too much thermal paste!";
+	tips[1].src = "img/tip2.jpg";
+	tips[1].alt = "Keep the boxes";
+	tips[2].src = "img/tip3.jpg";
+	tips[2].alt = "Don't over tighten screws";
+
+	window.addEventListener("load",defaultPic,false);
+	var max = 2;
+	var index = 0;
+	function defaultPic(){
+		document.getElementById('mainImg').src = tips[0].src;
+		document.getElementById('mainImg').alt = tips[0].alt;
+		document.getElementById('tip0').style.display = "block";
+	}
+	function checkCaption(){
+		document.getElementById('tip' + index).style.display = "none";
+	}
+	function prevPic() {
+		
+		if (index == 0) 
+			index = max;	//if already at first image, put it to last image
+		else
+			index -= 1;
+		document.getElementById('mainImg').src = tips[index].src;
+		document.getElementById('mainImg').alt = tips[index].alt;
+		document.getElementById('tip' + index).style.display = "block";
+	}
+	function nextPic() {	
+		if (index == max) {
+			index = 0; }
+		else  {
+			index += 1;
+		}
+		document.getElementById('mainImg').src = tips[index].src;
+		document.getElementById('mainImg').alt = tips[index].alt;
+		document.getElementById('tip' + index).style.display = "block";
+	}
+	
+</script>
+
+<style>
+</style>
+
+</head>
+
+<body>
+<div id="container">
+<div id="menu" class="menu">
+	<a href="index.html">Home</a>
+	<a href="how-to-build-a-pc.html">How to Build a PC</a>
+	<a href="budget-calculator.html">Budget Calculator</a>
+	<a href="faqs.html">FAQ</a>
+	<a href="tips.html">Tips</a>
+	<a href="contact-me.html">Contact Us</a>
+</div>
+<div id="left">
+	<div id="tipspage">
+	<div id="mainImage">
+		<div id="navContainer">
+			<img id="leftarrow" src="img/leftarrow.png" alt="leftarrow" width="5%" height="5%" onmouseup="checkCaption();prevPic();" >
+			<img id="rightarrow" src="img/rightarrow.png" alt="rightarrow" width="5%" height="5%" onmouseup="checkCaption();nextPic();">
+		</div>
+		<p></p>
+		<img id="mainImg" src="img/tip1.jpg" alt="tip1">
+		<div id="tip0" style="display:none;">
+			<h2><mark>Don't Apply too Much Thermal Paste</mark></h2>
+			<p class="MsoNormal">It's a silly little step, but it's something 
+			people constantly argue about online: what's the best way to apply 
+			thermal paste? I've seen people do some pretty crazy things, like 
+			put on a giant blob or spread it around with a credit card, when it 
+			really couldn't be simpler. Just put a small, pea-sized dab in the 
+			middle (lentil-sized, really), or a thin line about the size of a 
+			grain of rice. Then put your heatsink on and start screwing it in. 
+			The pressure will spread it out for you.<o:p></o:p></p>
+			<p class="MsoNormal">There are always exceptions to this rule, like 
+			very high- or low-viscosity pastes (like ones made with actual 
+			silver). But for the average paste, the process really is this 
+			simple. If ever in doubt, just check the instructions that come with 
+			your paste or look at the manufacturer's web site. In fact, their 
+			web site should also tell you which method (pea or rice) is best for 
+			your specific brand.<o:p></o:p></p>
+			<p class="MsoNormal">In the end, your application method shouldn't 
+			make a huge difference unless you're using really specialized, 
+			expensive thermal paste—which, by the way, probably&nbsp;<a href="http://www.tomshardware.com/reviews/thermal-paste-performance-benchmark,3616.html" target="_blank">won't 
+			make a huge difference in your temperatures</a>. Just don't use too 
+			much and you'll be fine. If you want more information,&nbsp;<a href="http://www.tomshardware.com/reviews/thermal-paste-heat-sink-heat-spreader,3600.html" target="_blank">this 
+			article at Tom's Hardware</a>&nbsp;has all you need to know.<o:p></o:p></p>
+			<p></p>
+		</div>
+		<div id="tip1" style="display:none;">
+			<h2><mark>Save Your Boxes</mark></h2>
+			<p>When you're done building, don't throw out those boxes or 
+			anti-static bags. They can come in handy when selling your parts 
+			later down the line and can be used to store all the extra cables, 
+			screws, brackets, and other parts that aren't used. </p>
+			<p>Don't throw the unused parts away, either, as they may come in 
+			use later down the road.</p>
+		</div>
+		<div id="tip2" style="display:none;">
+			<h2><mark>Don't Over Tighten Screws</mark></h2>
+			<p> This is a mistake happens a lot especially with&nbsp;CPU coolers. 
+			Many users think the tighter the better. Overall the goal is to 
+			ensure a solid secure bond, this can generally be achieved with a 
+			little more than finger tight. Exceeding this can cause serious 
+			issues. Why? Strain, torsion and unneeded pin / pad contact. 
+			</p>
+			<p> Consider that when mounting the cooling solution you are have the 
+			CPU which has a pad which is being push down against a socket with 
+			pins. Excessive pressure can cause memory channels to drop and even 
+			cause instability when pad makes contact with the socket. This is 
+			due to the fact the memory controller is in the CPU and needs to 
+			registered the pins from the motherboard socket to registered and 
+			initialize all the DIMMS physically installed. </p>
+			
+		</div>
+</div>
+
+</div>
+</div>
+<div id="right">
+
+</div>
+
+</div>
+</body>
+
+</html>

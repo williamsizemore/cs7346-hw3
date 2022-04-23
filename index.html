@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Homepage</title>
+
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+function enlarge(ImgID) {
+	var modal = document.getElementById('myModal');
+	
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById(ImgID);
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	    captionText.innerHTML = this.alt;
+	}
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	  
+	}
+	window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}}
+</script>
+
+<style type="text/css">
+</style>
+</head>
+
+<body>
+<div id="container">
+<div id="menu" class="menu">
+	<a href="index.html">Home</a>
+	<a href="how-to-build-a-pc.html">How to Build a PC</a>
+	<a href="budget-calculator.html">Budget Calculator</a>
+	<a href="faqs.html">FAQ</a>
+	<a href="tips.html">Tips</a>
+	<a href="contact-me.html">Contact Us</a>
+</div>
+	<div id="myModal" class="modal">
+
+	  <!-- The Close Button -->
+	  <span class="close" onmouseup="document.getElementById('myModal').style.display='none'" >&times;</span>
+	
+	  <!-- Modal Content (The Image) -->
+	  <img class="modal-content" id="img01" >
+	
+	  <!-- Modal Caption (Image Text) -->
+	  <div id="caption"></div>
+	</div>
+
+
+<div id="left">
+	<img src="img/case.png" alt="Computer Chassis" id="myImg"class="myImg" onmouseup="enlarge('myImg')" height="50%" width="50%">
+
+	<h1>Building a Computer</h1>
+	<p class="MsoNormal">Computers are everywhere and used by everyone for 
+	multitudes of reasons. Most people buy their computers off the shelf already 
+	built, usually made by companies like Dell, HP, and Lenovo. Buying 
+	pre-built computers comes built in fees for putting the computer together 
+	and testing and even for simply having a certain brands logo on it.
+	<span style="mso-spacerun:yes">&nbsp;</span>It is also quite often that the 
+	components used in these computers aren’t the latest and greatest and aren’t 
+	as good as they should be for the price range the computer is being sold 
+	for. <o:p></o:p></p>
+	<p class="MsoNormal">PC gaming has become much more popular in the last 
+	few years giving a rise in popularity to PC building. The rise of PC building 
+	has also brought about innovations that have made it easier for the average 
+	user to build a powerful computer. Building a PC, simply put, involves ordering the 
+	computer parts that fit your budget and putting them in the right slots, 
+	almost like Legos for adults. There are seemingly endless combinations you can use to find the right PC for 
+	your needs and even your personality with different choices in color scheme.<o:p></o:p></p>
+	<p class="MsoNormal">To first understand how to build a computer, however, 
+	one must know all the required components that is needed and know what they 
+	are used for to better understand what fits their needs. <o:p></o:p></p>
+	<p>&nbsp;</p>
+	<table border="1" class="auto-style1" style="width: 991px; height: 372px">
+				
+	<thead>
+		<tr>
+			<th class="auto-style2" colspan="2">
+			Components in a Computer</th>
+		</tr>
+	</thead>
+	<tbody>
+		
+					
+			<td class="ms-list1-left" style="width: 223px"><h2>Processor (CPU)</h2></td>
+			<td class="ms-list1" ><img src="img/processor.jpg" id="cpu" class="myImg" width="177" height="101"
+				onmouseup="enlarge('cpu')"alt="Central Processing Unit (CPU)">The central processing unit (CPU), also 
+			called a&nbsp;processor, is located inside the&nbsp;computer case&nbsp;on the 
+			motherboard. It is sometimes called the brain of the computer, and 
+			its job is to carry out commands. Whenever you press a key, click 
+			the mouse, or start an application, you're sending instructions to 
+			the CPU. <br><br>The CPU is usually a&nbsp;two-inch ceramic square&nbsp;with 
+			a&nbsp;silicon chip&nbsp;located inside. The chip is usually about the size of 
+			a thumbnail. The CPU fits into the motherboard's&nbsp;CPU socket, which 
+			is covered by the&nbsp;heat sink, an object that absorbs heat from the 
+			CPU.<br><br>&nbsp;A processor's&nbsp;speed&nbsp;is measured in&nbsp;megahertz 
+			(MHz), or millions of instructions per second; and&nbsp;gigahertz (GHz), 
+			or billions of instructions per second. A faster processor can 
+			execute instructions more quickly. However, the actual speed of the 
+			computer depends on the speed of many different components—not just 
+			the processor. 
+			</td>
+		
+			<tr>
+			<td class="ms-list1-left" style="width: 223px"><h2>Graphics Processing 
+			Unit&nbsp; <br>(GPU)</h2></td>
+			<td class="ms-list1"><img src="img/gpu1.jpg" id="gpu" class="myImg" height="142" width="230"
+				onmouseup="enlarge('gpu')"alt = "Graphics Processing Unit (GPU)">A GPU is an expansion 
+			card which generates a feed of output images to a display/monitor. 
+			The GPU is a discrete or dedicated card meant for processing images 
+			and visual effects more effectively than the CPU. It is similar to 
+			how a CPU functions using cores, however, GPUs will have many more 
+			cores that are lower power and do simple tasks in parallel to 
+			compute the results faster than the CPU could as it has less cores 
+			but each one is very powerful. <br><br>CPUs will often contain an 
+			integrated graphics chip that is suitable for video playback and 
+			some light gaming. Dedicated graphics cards will greatly increase 
+			performance in more intensive games and applications that utilize 
+			the GPU.</td>
+		</tr>
+		<tr>
+			<td class="ms-list1-left" style="width: 223px"><h2>Memory (RAM)</h2></td>
+			<td class="ms-list1"><img src="img/ram.jpg" height="191" id="ram"class="myImg"width="233" onmouseup="enlarge('ram')" alt="Random Access Memory (RAM)">
+			RAM is your system's&nbsp;short-term memory. Whenever your computer 
+			performs calculations, it temporarily stores the data in the RAM 
+			until it is needed. <br>This&nbsp;short-term memory disappears&nbsp;when the 
+			computer is turned off. If you're working on a document, 
+			spreadsheet, or other type of file, you'll need to&nbsp;save&nbsp;it to avoid 
+			losing it. When you save a file, the data is written to the&nbsp;hard 
+			drive, which acts as&nbsp;long-term storage. <br>RAM is measured 
+			in&nbsp;megabytes (MB) or gigabytes (GB). The&nbsp;more RAM&nbsp;you have, the more 
+			things your computer can do at the same time. If you don't have 
+			enough RAM, you may notice that your computer is sluggish when you 
+			have several programs open. Because of this, many people add&nbsp;extra 
+			RAM&nbsp;to their computers to improve performance.
+			</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th class="ms-list1-left" style="width: 223px"><h2>Hard Disk Drives (HDD)</h2></th>
+			<td class="ms-list1"><img src="img/hdd.jpg" id="hdd"class="myImg"height="184" width="207" onmouseup="enlarge('hdd')" alt="Hard Disk Drive (HDD)">
+			The&nbsp;hard drive&nbsp;is where your software, documents, and other files 
+			are stored. The hard drive is&nbsp;long-term storage, which means the 
+			data is still saved even if you turn the computer off or unplug it.
+			<br>When you run a program or open a file, the computer copies some 
+			of the data from the&nbsp;hard drive&nbsp;onto the&nbsp;RAM. When you&nbsp;save&nbsp;a file, 
+			the data is copied back to the&nbsp;hard drive. The faster the hard 
+			drive, the faster your computer can&nbsp;start up&nbsp;and&nbsp;load programs. <br>
+			<br>HDDs can have large capacity of storage for low cost per 
+			Gigabyte of storage, especially when compared to solid-state drives
+			</td>
+		</tr>
+	
+		<tr>
+			<th class="ms-list1-left" style="width: 223px"><h2>Solid State Drives (SSD)</h2></th>
+			<td class="ms-list1"><img src="img/ssd.jpg" id="ssd"class="myImg"height="154" width="267" onmouseup="enlarge('ssd')" alt="Solid State Drive (SSD)">A solid state drive is a device that uses 
+			integrated circuit assemblies as memory to store data persistently. 
+			SSDs have no moving mechanical parts like HDDs do, which makes them 
+			more resistent to physical shock, and allows them to run silently. 
+			SSDs are much faster and have lower latency than HDDs but currently 
+			are more expensive per Gigabyte of storage.<br><br>A common setup is 
+			to have a SSD as the drive with the operating system on it, while 
+			having an HDD for mass storage like games and other large 
+			applications. This allows the user to benefit from the increased 
+			boot time speed and overall speed of the operating system while 
+			still maintaining necessary storage space for programs or files that 
+			do not require the extra speed of the SSD.&nbsp; 
+			</td>
+		</tr>
+	
+		<tr>
+			<th class="ms-list1-left" style="height: 23px; width: 223px;"><h2>Power Supply Unit (PSU)</h2></th>
+			<td class="ms-list1" style="height: 23px; "><img src="img/psu.png" id="psu"class="myImg"height="163" width="246"onmouseup="enlarge('psu')" alt="Power Supply Unit (PSU)">A power supply unit 
+			converts AC power from the wall to low-voltage regulated DC power 
+			for the internal componenets of a computer. The PSU connects to 
+			certain devices within the computer that requires power such as the 
+			motherboard, GPU, and disk drives. Many of the parts that plug into 
+			the motherboard receive power from the motherboard which receives 
+			the power from the PSU, and even the graphics cards can receive some 
+			of the power from the motherboard while at the same time using power 
+			straight from the PSU.<br><br>There are different power ratings that 
+			range from 250 watts to over 1000 watts, which determines the 
+			maximum power draw that is limited on that specific PSU. Efficiency 
+			also plays a role into power supplies, in which the higher quality 
+			PSUs will have the "80 plus" branding on them to determine the 
+			efficiency. The "80 plus" branding has multiple tiers of quality 
+			ranging from "80 plus" to "80 plus titanium" with multiple other 
+			levels in between which are a simple way of knowing the efficiency 
+			of the power supply. The greater the efficiency, the greater the 
+			savings on power use and lower heat output, however, the benefits 
+			are more substantial on computers that use a lot of power compared 
+			to less power hungry hardware.&nbsp;&nbsp;&nbsp; 
+			</td>
+		</tr>
+	
+		<tr id="lastcell">
+			<th class="ms-list1-left" style="height: 23px; width: 223px;"><h2>Motherboard</h2></th>
+			<td class="ms-list1" style="height: 23px; "><img src="img/motherboard.jpg" id="mobo"class="myImg"height="177" width="230"onmouseup="enlarge('mobo')" alt="Motherboard">The 
+			motherboard is the part of the computer that connects all the parts 
+			and allows them to communicate with each other. You directly install 
+			the CPU, RAM, and GPU on the motherboard with the storage drives 
+			being connected via Sata cable to the motherboard.<br><br>The 
+			motherboard also contains all the ports for peripherals like a 
+			mouse, keyboard, and audio device. Motherboards are made to work 
+			with specific models of CPUs which use the same socket type. A 
+			socket 1151 motherboard will support CPUs that specify support for 
+			1151 socket type, any other CPU will not fit or work properly unless 
+			otherwise specified.</td>
+		</tr>
+	
+	</tfoot>
+	</table>
+
+&nbsp;</div>
+
+<div id="right">
+
+</div>
+
+</div>
+</body>
+
+</html>

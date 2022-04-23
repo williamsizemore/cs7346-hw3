@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>FAQs</title>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+	
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      event.preventDefault();
+
+	      var hash = this.hash;   //store hash
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+</script>
+</head>
+
+<body>
+<div id="container">
+<div id="menu" class="menu">
+	<a href="index.html">Home</a>
+	<a href="how-to-build-a-pc.html">How to Build a PC</a>
+	<a href="budget-calculator.html">Budget Calculator</a>
+	<a href="faqs.html">FAQ</a>
+	<a href="tips.html">Tips</a>
+	<a href="contact-me.html">Contact Us</a>
+</div>
+<div id="left">
+<div id="QNA">
+	<h1>Frequently Asked Questions</h1>
+	<h4>Click on a question to jump to it on the page</h4>
+	<ul id="faqlist">
+		<li><h3><a href="#Q1">What if I have never built a PC before?</a></h3></li>
+		<li><h3><a href="#Q2">Why should I build a computer rather than buying one at the store?</a></h3></li>
+		<li><h3><a href="#Q3">Is building a custom PC only for gamers?</a></h3></li>
+		<li><h3><a href="#Q4">Are all custom PC cases overly flashy gamer-style?</a></h3></li>
+		<li><h3><a href="#Q5">I want to build a custom PC but where do I start?</a></h3></li>
+		<li><h3><a href="#Q6" >Which type of PC do I need?</a></h3></li>
+	</ul>
+	<p>Have a question that's not here? <a href="contact-me.html">Contact Me Here</a> to ask your question.</p>
+	<h2 id="Q1">What if I have never built a PC before?</h2>
+	<p>Building a computer looks more complicated than it really is, and after going through the process once, it won't be so bad. There
+		are plenty of in-depth guides that take you step-by-step through the process. While it can be time consuming to build, it isn't too complicated.</p>
+	
+	<h2 id="Q2">Why should I build a computer rather than buying one at the store?</h2>
+	<p>Picking out the individual parts and building the PC reduces the cost and can allow for better
+		hardware for the dollar whereas picking a pre-built will have extra costs of assembly and branding
+		and quite often don't have the best hardware available to choose from at least in the mainstream companies.</p>
+	
+	<h2 id="Q3">Is building a custom PC only for gamers?</h2>
+	<p> Not at all. While building PCs is very popular among gamers and there is a large market focus towards that, that are many other uses being seen for custom computers. Whether for
+		video editing/rendering, media center video streaming, or just getting the most out of a budget level computer, the point of a custom PC is that it fits the user's needs and even 
+		personality to an extent. I've personally custom built computers that are only used to browse the web, and I've built computers that are meant to max out the most graphically intensive games.</p>
+	
+	<h2 id="Q4">Are all custom PC cases overly flashy gamer-style?</h2>
+	<p> While it is definitely common to see custom computer cases that are 
+	covered in LEDs, there are plenty of designs out there to suit everyone's 
+	taste. You can find small form-factor with minimalistic design or you can 
+	find large full-towers with all the customization and ease of use (tool-less 
+	design). It just takes some research to find the right computer case for 
+	you, just be sure that the rest of your hardware will be able to fit inside 
+	the case you choose.</p>
+	
+	<h2 id="Q5">I want to build a custom PC but where do I start?</h2>
+	<p>First thing is to figure out your needs and budget. From there you can find many guides and builds online of your budget. A good site to check is <a href="https://pcpartpicker.com/guide/">PCPartPicker</a> which
+		has many tools and builds that you're bound to find something that suits your needs. There are also plenty of 
+	YouTube channels that go over different budgeted builds and explain why they chose those parts if you prefer
+		to listen instead of read when researching.</p>
+	
+	<h2 id="Q6">Which type of PC do I need?</h2>
+	<p>That depends on what you intend on using it for. Are you going to play intensive games? Watch movies/TV? Work or use for school? Typically for simply watching movies or editing documents, a more budget oriented PC
+		will do the trick. Gaming PCs generally start around the $450 for entry 
+	level and go up from there in price. Gaming Laptops will be more expensive 
+	compared to equivalent power from a desktop, especially when it comes to 
+	shrinking the size of the laptop. If you plan on gaming on the latest titles 
+	for the next few years, a custom PC is recommended. You can start with a 
+	mid-tier PC and upgrade later on to make it high-end, assuming the processor is up to the task.</p>
+
+	<br>
+	<br>
+	</div>
+</div>
+<div id="right">
+
+</div>
+
+</div>
+</body>
+
+</html>

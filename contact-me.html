@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Contact Me</title>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script type="text/javascript">
+
+</script>
+</head>
+
+<body>
+<div id="container">
+<div id="menu" class="menu">
+	<a href="index.html">Home</a>
+	<a href="how-to-build-a-pc.html">How to Build a PC</a>
+	<a href="budget-calculator.html">Budget Calculator</a>
+	<a href="faqs.html">FAQ</a>
+	<a href="tips.html">Tips</a>
+	<a href="contact-me.html">Contact Us</a>
+</div>
+<div id="left">
+	<div id="contactMe">
+	
+	<p>Have questions or suggestions? Leave them in the message box below!</p>
+
+	<form id="contact"  ><br>
+		<label>First Name: </label><input type="text" name="firstname" placeholder="First name" class="userinfo" required="required"> *</br>
+		<br><label>Last Name: </label><input type="text" name="lastname" placeholder="Last name"class="userinfo"> </br>
+		<br><label>Email: </label><input type ="email" name="email" placeholder="name@domain.com"class="userinfo" required="required"> * 	</br>
+		<br><label>Phone #: </label><input type="tel" placeholder="000-000-0000" pattern="^\d{3}-\d{3}-\d{4}$" class="userinfo"> (XXX-XXX-XXXX)
+		<br><br>
+		<label>Message:</label><p id="requiredtxtbox">*</p>
+		<textarea id="message" required="required" maxlength="1000" placeholder="Questions or suggestions here..."></textarea>
+		<p id="requiredtxtbox">* Required Fields</p>
+		
+		<br><input type="submit" value="Submit" id="send" class="contactbtn" >
+		<input type="reset" value="Clear" id="clear" class="contactbtn">
+		
+	</form>
+
+	</div>
+</div>
+</div>
+</body>
+
+</html>

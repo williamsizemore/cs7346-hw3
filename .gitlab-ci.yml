@@ -1,0 +1,21 @@
+stages: 
+    - docker
+
+build:
+    stage: docker
+    image: docker
+    services: 
+        - docker:dind
+    variables:
+        REGISTRY: gcr.io/crested-guru-339621
+        SERVICE: simple-web-server
+    script:
+        # decode the auth values which is stored in the CI/CD variables as a file, then feed that file into docker login
+        - base64 -d $GCR_AUTH | docker login -u _json_key --password-stdin https://gcr.io
+
+        - docker build 
+          --pull
+          --tag ${REGISTRY}/${SERVICE}:latest
+          .
+
+        - docker push ${REGISTRY}/${SERVICE}:latest

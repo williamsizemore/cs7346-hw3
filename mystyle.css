@@ -1,0 +1,451 @@
+body {
+	background-color:#333333;
+	background-image:url('img/background2.jpg');
+	background-attachment:scroll;
+	background-repeat:repeat;
+	font-family:Roboto,Arial, Helvetica, sans-serif;
+	color:#3D3D3D;
+}
+p {
+	
+	text-align:left;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+h2 {
+	color:#02558B;
+}
+
+#container {
+	position:relative;
+	background-color:white;
+	margin-left:auto;
+	margin-right:auto;	
+	overflow:auto;
+	width:auto;
+	max-width:1400px;
+}
+#menu {
+	margin:10px;
+	border-bottom:2px gray solid;
+	padding:5px;
+	text-align:center;
+	}
+.menu a {
+	/* buttons at the top color and shape */ 
+	border:none;
+	border-radius:5px;
+	padding:4px;
+	font-size:16px;
+	padding:15px 32px;
+	text-decoration:none;
+	color:white; 
+	margin:2px;
+	text-align:center;
+	display:inline-block;
+	background-color:#3D3D3D;
+	}
+.menu a:hover {
+	/* buttons at the top when hovered*/
+	background-color:#02558B;
+	box-shadow:0 12px 16px rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	
+
+}
+#left {
+	 text-align:center;
+}
+
+/**********************************
+*  CSS for the budget calculator  *
+**********************************/
+input#budget {
+	height:25px;
+	font-size:16px;
+}
+#submit {
+	margin:10px;
+	padding:4px 10px;
+	font-size:14pt;
+	background-color:#3D3D3D;
+	color:white;
+	border: 0px white none;
+	border-radius:5px;
+}
+
+#submit:hover {
+	background-color:#02558B;
+	cursor:pointer;
+
+}
+input#submit:active {
+	transform: translateY(1px);
+}
+#budgetTable {
+	margin-left:20%;
+	margin-right:20%;
+	text-align:left;
+	border:0px white none;
+	padding:8px;
+}
+#budgetTable p {
+	margin-left:15px;
+}
+#note {
+	text-align:center;
+	font-size:small;
+}
+
+/*****************
+* contact page   *
+*****************/	
+form {
+    /* Just to center the form on the page */
+ 	margin:auto;
+    width: 600px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #02558B;
+    border-radius: 0.5em;
+}
+#contactMe .userinfo {
+	height:25px;
+	font-size:16px;
+}
+#contactMe label{
+	display:inline-block;
+	width:90px;
+	text-align:right;
+	float:left;
+	margin-right:2.6em;
+	margin-top:4px;
+	color:#02558B
+}
+#contactMe .button {
+    padding-left: 90px; /* same size as the label elements */
+}
+#contactMe button {
+    margin-left: .5em;
+}
+#contactMe textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+	height:200px;
+	max-height:1000px;
+	resize: vertical;
+	width:600px;
+	margin-left:-2px;	
+}
+#requiredtxtbox {
+	float:right;
+	margin-right:0%;
+	margin-bottom:0%;
+}
+#contactMe submit {
+	margin-top:10px;
+}
+#contactMe form div + div {
+    margin-top: 1em;
+}
+#contactMe p{
+	margin-left:30%;
+}
+#contactMe {
+	padding:10px;
+	text-align:left;
+}
+.contactbtn {
+	margin:10px;
+	padding:4px 10px;
+	font-size:14pt;
+	background-color:#3D3D3D;
+	color:white;
+	border: 0px white none;
+	border-radius:5px;
+}
+.contactbtn:hover {
+	background-color:#02558B;
+	cursor:pointer;
+}
+.contactbtn:active {
+	transform: translateY(1px);
+}
+/* how to build a pc page */
+.vidnotes {
+	font-size:11pt;
+	text-align:center;
+	margin-left:25%;
+	margin-right:25%;
+}
+#pcguide {
+	list-style-type:none;
+	text-align:left;
+	list-style-type:square;
+	margin-left:17%;
+
+}
+
+/******************************
+* Home page styling for table *
+******************************/
+.ms-list1-main {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+.ms-list1-tl {
+	font-weight: bold;
+	color: white;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style:solid;
+	border-bottom: .75pt solid gray;
+	background-color: silver;
+}
+.ms-list1-left {
+	border-style:none;
+	background-color:white;
+	font-weight:bold;
+	padding:5px;
+	text-align:center;
+	vertical-align:top;
+	border-bottom:2px #3D3D3D dashed;
+}
+.ms-list-left h3 {
+	margin-top:15%
+}
+.ms-list1-top {
+	font-weight: bold;
+	font-size:x-large;
+	color: white;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style:none;
+	border-bottom:2px #3D3D3D dashed;
+	background-color: #02558B;
+}
+.ms-list1 {
+	font-weight: normal;
+	text-align:left;
+	border-style: none;
+	background-color:white;
+	padding:10px;
+	text-indent:20px;	
+	border-bottom:2px #3D3D3D dashed;
+}
+
+#imgcontainer.ms-list1{
+	border-left:0px white none;
+	background-color:white;
+	text-align:right;
+}
+.auto-style1 {
+	background-color: white;
+	margin-left:auto;
+	margin-right:auto;
+	border:2px #02558B none;
+}
+.auto-style2 {
+	border-style: none;
+	border-width: 1px;
+	font-weight: bold;
+	font-size: x-large;
+	color: white;
+	background-color: #02558B;
+	
+	margin-top:-1%;
+	
+}
+/******************************
+* styling for enlarged images *
+******************************/
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    float:right;
+}
+#myImg {
+	float:none;
+
+}
+
+.myImg:hover,#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+#navContainer {
+	margin-left:3%;
+	margin-right:23%;
+	margin-top:14%;
+	position:absolute;
+}
+#leftarrow{
+	float:left;
+	opacity:0.3;
+	filter: alpha(opacity=50);
+}
+#leftarrow:hover, #rightarrow:hover {
+	opacity:1.0;
+	filter: alpha(opacity=100);
+	cursor:pointer;
+}
+#rightarrow {
+	float:right;
+	opacity:0.3;
+	filter: alpha(opacity=50);
+}
+#mainImg {
+	max-width:800px;
+	max-height:450px;
+}
+/*****************
+* TIPS Page CSS  *
+*****************/
+#mainImage {	/* container for slide show */
+	margin-left:20%;
+	margin-right:20%;
+	padding-top:5px;
+	color:white;
+	overflow:auto;
+	background: #3D3D3D; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(top, #242424, #3D3D3D); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, #242424, #3D3D3D); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, #242424, #3D3D3D); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, #242424, #3D3D3D); /* Standard syntax */
+	border-radius:10px;
+	margin-bottom:7px;
+}
+#mainImage a{
+	color:#CCCCCC;
+}
+#tipspage h2{
+	text-align:left;
+	margin-left:15%;
+	margin-top:-6%;
+	padding:3px;
+}
+#tipspage mark {
+	color:white;
+	padding:3px;
+	border-radius:5px;
+	
+	/* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+/******************
+* FAQS Page CSS	  *
+******************/
+#QNA {
+	margin-left:15%;
+	margin-right:15%;
+	
+	font-family:Roboto;
+	font-weight:lighter;
+}
+#QNA h2,h1 {
+	color:#02558B;
+	text-align:left;
+	margin-left:15%;
+}
+#QNA h4 {
+	text-align:left;
+	margin-left:15%;
+}
+#QNA p {
+	line-height:20pt;
+	color:#3D3D3D;
+	margin-left:18%;	
+}
+#faqlist {
+	text-align:left;
+	list-style-type:square;
+	margin-left:17%;
+}
+#faqlist a, #faqlist a:visited{
+	color:#02558B;
+}
