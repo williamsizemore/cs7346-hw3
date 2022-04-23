@@ -51,7 +51,7 @@ on:
 
 env:
   PROJECT_ID: crested-guru-339621 # Google Cloud project id
-  GAR_LOCATION: gcr.io/crested-guru-339621 # TODO: update Artifact Registry location
+  GAR_LOCATION: gcr.io/crested-guru-339621 # Artifact Registry location
   SERVICE: web_server2 # Cloud Run service name
   REGION: us-central1 # Cloud Run service region
 
@@ -71,7 +71,7 @@ jobs:
         id: auth
         uses: 'google-github-actions/auth@v0'
         with:
-          credentials_json: '${{ secrets.GCP_AUTH }}''
+          credentials_json: '${{ secrets.GCP_AUTH }}'
 
       # BEGIN - Docker auth and build (NOTE: If you already have a container image, these Docker steps can be omitted)
 
