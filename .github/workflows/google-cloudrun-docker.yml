@@ -51,7 +51,7 @@ on:
 
 env:
   PROJECT_ID: crested-guru-339621 # Google Cloud project id
-  GAR_LOCATION: gcr.io/crested-guru-339621 # Artifact Registry location
+  GAR_LOCATION: https://gcr.io # Artifact Registry location
   SERVICE: web_server2 # Cloud Run service name
   REGION: us-central1 # Cloud Run service region
 
