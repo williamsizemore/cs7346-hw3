@@ -50,9 +50,9 @@ on:
       - main
 
 env:
-  PROJECT_ID: crested-guru-339621 # Google Cloud project id
-  GAR_LOCATION: https://gcr.io # Artifact Registry location
-  SERVICE: web_server2 # Cloud Run service name
+  PROJECT_ID: crested-guru-339621/containers # Google Cloud project id
+  GAR_LOCATION: us-central1-docker.pkg.dev # Artifact Registry location
+  SERVICE: my_site # Cloud Run service name
   REGION: us-central1 # Cloud Run service region
 
 jobs:
