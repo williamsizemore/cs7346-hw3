@@ -42,6 +42,9 @@ jobs:
           password: ${{ secrets.GCR_AUTH }}
           registry: '${{ env.GAR_LOCATION }}'
 
+      - name: Cloud SDK setup
+        uses: 'google-github-actions/setup-cloud@v0'
+
       - name: Cloud build
         run: |-
           gcloud builds submit -t "${{ env.GAR_LOCATION }}/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{ github.sha }}"
